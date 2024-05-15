@@ -1,0 +1,167 @@
+<body>
+
+
+
+   <!-- back to top start -->
+   <div class="progress-wrap">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+   </div>
+   <!-- back to top end -->
+   
+   
+
+
+
+
+   <main>
+
+      <!-- sign up area start -->
+      <section class="signup__area po-rel-z1 pt-100 pb-145">
+         <div class="sign__shape">
+            <img class="man-1" src="../../../../assets/img/icon/sign/man-1.png"alt="My Image">
+            <img class="man-2" src="../../../../assets/img/icon/sign/man-2.png"alt="My Image">
+            <img class="circle" src="../../../../assets/img/icon/sign/circle.png"alt="My Image">
+            <img class="zigzag" src="../../../../assets/img/icon/sign/zigzag.png" alt="My Image">
+            <img class="dot" src="../../../../assets/img/icon/sign/dot.png" alt="My Image">
+            <img class="flower" src="../../../../assets/img/icon/sign/flower.png" alt="My Image">
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-xxl-8 offset-xxl-2 col-xl-8 offset-xxl-3">
+                  <div class="section__title-wrapper text-center mb-55">
+                     <h1 class="section__title">Create a free <br> Account</h1>
+                     <p>Join us in our DeafSquare</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-xxl-6 offset-xxl-3 col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+                  <div class="sign__wrapper white-bg">
+                     
+                        <div class="sign__header mb-35">
+                          <img src="./../../../../assets/img/logo/logo1.png" width="250" height="250" />
+                        </div>
+                     
+                     <form [formGroup]="signupForm">
+                        <div class="sign__input-wrapper mb-25">
+                           <h5>Full Name</h5>
+                           <div class="sign__input">
+                              <input type="text" formControlName="fullname" placeholder="Full name">
+                              <i class="fal fa-user"></i>
+
+                              <div class="form-error"
+                                 *ngIf="signupForm.controls['fullname'].invalid &&(signupForm.controls['fullname'].dirty ||signupForm.controls['fullname'].touched)">
+                                 <div id="error-message" *ngIf="signupForm.controls['fullname'].errors?.['required']">
+                                    name is required
+                                 </div>
+                                 
+                              </div>
+                           </div>
+                        </div>
+                        <div class="sign__input-wrapper mb-25">
+                           <h5>Email</h5>
+                           <div class="sign__input">
+                              <input type="text" placeholder="e-mail address" formControlName="email" >
+                              <i class="fal fa-envelope"></i>
+
+                              <div class="form-error" *ngIf="
+                              signupForm.controls['email'].invalid &&
+                              (signupForm.controls['email'].dirty ||
+                              signupForm.controls['email'].touched)">
+                               <div id="error-message" *ngIf="signupForm.controls['email'].errors?.['required']">
+                                 email required
+                               </div>
+                               <div id="error-message" *ngIf="signupForm.controls['email'].errors?.['email']">
+                                 Invalid email format
+                               </div>
+                              </div>
+                           </div>
+                        </div>
+                           <div class="sign__input-wrapper mb-25">
+                              <h5>Password</h5>
+                              <div class="sign__input">
+                                 <input type="text" placeholder="Password" formControlName="password">
+                                 <i class="fal fa-lock"></i>
+
+                                 <div
+                                 class="form-error"
+                                 *ngIf="signupForm.controls['password'].invalid &&(signupForm.controls['password'].dirty || signupForm.controls['password'].touched)">
+                                 <div id="error-message" *ngIf="signupForm.controls['password'].errors?.['required']">
+                                 Password is required
+                                  </div>
+                                 <div id="error-message" *ngIf="signupForm.controls['password'].errors?.['minlength']">
+                                 Password should be at least 6 characters
+                                 </div>
+                              </div>
+                           </div>
+                           </div>
+                           <div class="sign__input-wrapper mb-10">
+                              <h5>Re-Password</h5>
+                              <div class="sign__input">
+                                 <input type="text" placeholder="Re-Password" formControlName="confirmPassword" >
+                                 <i class="fal fa-lock"></i>
+
+                                 <div *ngIf="signupForm.hasError('passwordsNotMatch') && (signupForm.controls['confirmPassword'].dirty||signupForm.controls['confirmPassword.touched'])" id="error-message" >
+                                 Password do not match
+                              </div>
+                              </div>
+                           </div>
+                           <div class="sign__input-wrapper mb-25">
+                              <h5>Phone Number</h5>
+                              <div class="sign__input">
+                                <input type="tel" placeholder="Phone number" formControlName="phoneNumber">
+                                <i class="fal fa-phone"></i> 
+
+                                <div
+                                 class="form-error"
+                                 *ngIf="signupForm.controls['phoneNumber'].invalid &&(signupForm.controls['phoneNumber'].dirty || signupForm.controls['phoneNumber'].touched)">
+                                 <div id="error-message" *ngIf="signupForm.controls['phoneNumber'].errors?.['required']">
+                                 Phone Number is required
+                                  </div>
+                                  <div id="error-message" *ngIf="signupForm.controls['phoneNumber'].errors?.['invalidPhoneNumber']">
+                                    Phone Number must be only Numbers
+                                  </div>
+                              </div>
+                              </div>
+                            </div>
+                            <div class="sign__input-wrapper mb-25">
+                              <h5>Birthday</h5>
+                              <div  style="width: 100%;"> <!-- Adjust the width here -->
+                                  <mat-form-field appearance="fill" style="width: 100%;"> <!-- Adjust the width here -->
+                                      <input matInput [matDatepicker]="birthdayPicker" placeholder="Choose a date" formControlName="birthday">
+                                      <mat-datepicker-toggle matSuffix [for]="birthdayPicker"></mat-datepicker-toggle>
+                                      <mat-datepicker #birthdayPicker></mat-datepicker>
+                                  </mat-form-field>
+                              </div>
+                          </div>
+                          
+                          
+
+                              <div class="sign__action d-flex justify-content-between mb-30">
+                              <div class="sign__agree d-flex align-items-center">
+                                 <input class="m-check-input" type="checkbox" id="m-agree">
+                                 <label class="m-check-label" for="m-agree">I agree to the <a href="#">Terms &
+                                       Conditions</a>
+                                 </label>
+                              </div>
+                           </div>
+                           <button class="e-btn w-100"> <span></span> Sign Up</button>
+                           <div class="sign__new text-center mt-20">
+                              <p>Already a member ? <a routerLink="/signin"> Sign In</a></p>
+                           </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </section>
+      <!-- sign up area end -->
+
+   </main>
+
+
+
+</body>

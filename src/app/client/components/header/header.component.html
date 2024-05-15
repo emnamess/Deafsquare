@@ -1,0 +1,103 @@
+<header>
+    <div id="header-sticky" class="header__area header__transparent header__padding">
+       <div class="container-fluid">
+          <div class="row align-items-center">
+             <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-2 col-sm-4 col-6">
+                <div class="header__left d-flex">
+                   <div  class="logo">
+                      <a href="index.html">
+                         <img src="assets/img/logo/logo1.png" height="250" width="260">
+                      </a>
+                   </div>
+                </div>
+             </div>
+             <div class="col-xxl-9 col-xl-9 col-lg-8 col-md-10 col-sm-8 col-6 ">
+                <div class="header__right d-flex justify-content-end align-items-center">
+                   <div class="main-menu">
+                      <nav id="mobile-menu">
+                         <ul>
+                           <li id="navbar-content">
+                              <a routerLink="/courses">Courses</a>
+                          </li>
+                            <li id="navbar-content" class="has-dropdown">
+                               <a routerLink="/">About Us</a>
+                               <ul class="submenu">
+                                  <li ><a routerLink="/about">Press and media</a></li>
+                                  <li><a routerLink="/Mission">Competition and prizes</a></li>
+                                  <li><a routerLink="/team">Our Team</a></li>
+                                  <li><a routerLink="/Mission">Our Mission</a></li>
+
+                               </ul>
+                            </li>
+                           
+                            <li id="navbar-content">
+                               <a href="blog.html">Events</a>
+                            </li>
+                            <li id="navbar-content" >
+                               <a href="course-grid.html">Community</a>
+                            </li>
+                            <li id="navbar-content"><a href="contact.html">Business</a></li>
+                         </ul>
+                      </nav>
+                   </div>
+                   
+                   <div class="header__btn ml-20 d-none d-sm-block">
+                      <a routerLink="/signup" class="e-btn2">Signup</a>
+                   </div>
+                   <div class="header__btn ml-20 d-none d-sm-block">
+                     <a routerLink="/signin" class="e-btn1">Login</a>
+                  </div>
+                   <div class="sidebar__menu d-xl-none">
+                      <div class="sidebar-toggle-btn ml-30" id="sidebar-toggle">
+                          <span class="line"></span>
+                          <span class="line"></span>
+                          <span class="line"></span>
+                      </div>
+                  </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+     <!-- sidebar area start -->
+   <div class="sidebar__area">
+      <div class="sidebar__wrapper">
+         <div class="sidebar__close">
+            <button class="sidebar__close-btn" id="sidebar__close-btn">
+               <span><i class="fal fa-times"></i></span>
+               <span>close</span>
+            </button>
+         </div>
+         <div class="sidebar__content">
+            <div class="logo mb-40">
+               <a href="index.html">
+                  <img src="assets/img/logo/logo.png" alt="logo">
+               </a>
+            </div>
+            <div class="mobile-menu fix"></div>
+
+            <div class="sidebar__search p-relative mt-40 ">
+               <form action="#">
+                  <input type="text" placeholder="Search...">
+                  <button type="submit"><i class="fad fa-search"></i></button>
+               </form>
+            </div>
+            <div class="sidebar__cart mt-30">
+               <a href="#">
+                  <div class="header__cart-icon">
+                     <svg viewBox="0 0 24 24">
+                        <circle class="st0" cx="9" cy="21" r="1" />
+                        <circle class="st0" cx="20" cy="21" r="1" />
+                        <path class="st0" d="M1,1h4l2.7,13.4c0.2,1,1,1.6,2,1.6h9.7c1,0,1.8-0.7,2-1.6L23,6H6" />
+                     </svg>
+                  </div>
+                  <span class="cart-item">2</span>
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- sidebar area end -->
+   <div class="body-overlay"></div>
+   <!-- sidebar area end -->
+ </header>

@@ -1,0 +1,563 @@
+
+
+/*----------------------------------------*/
+/*  24. LOGIN CSS START
+/*----------------------------------------*/
+#error-message{
+  color: #e93e30;
+}
+.sign__wrapper {
+    padding: 50px 70px;
+    padding-bottom: 45px;
+    margin: 0 30px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 40px 80px 0px rgba(2, 2, 26, 0.14);
+    -moz-box-shadow: 0px 40px 80px 0px rgba(2, 2, 26, 0.14);
+    box-shadow: 0px 40px 80px 0px rgba(2, 2, 26, 0.14);
+    z-index: 11;
+  }
+  @media (max-width: 575px) {
+    .sign__wrapper {
+      margin: 0;
+      padding: 30px 20px;
+      padding-bottom: 25px;
+    }
+  }
+  .sign__shape img {
+    position: absolute;
+    z-index: 1;
+  }
+  .img-logo{
+    margin-left: 50px;
+  }
+  
+  
+  .sign__shape img.man-1 {
+    left: 28%;
+    top: 60%;
+    z-index: 1;
+  }
+  @media only screen and (min-width: 1400px) and (max-width: 1600px) {
+    .sign__shape img.man-1 {
+      left: 19%;
+    }
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .sign__shape img.man-1 {
+      left: 16%;
+    }
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .sign__shape img.man-1 {
+      left: 7%;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .sign__shape img.man-1 {
+      left: 2%;
+    }
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .sign__shape img.man-1 {
+      left: 1%;
+    }
+  }
+  @media (max-width: 575px) {
+    .sign__shape img.man-1 {
+      display: none;
+    }
+  }
+  .sign__shape img.man-2 {
+    right: 24%;
+    top: 65%;
+  }
+  @media only screen and (min-width: 1400px) and (max-width: 1600px) {
+    .sign__shape img.man-2 {
+      top: 55%;
+      right: 20%;
+    }
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .sign__shape img.man-2 {
+      top: 60%;
+      right: 15%;
+    }
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .sign__shape img.man-2 {
+      top: 60%;
+      right: 7%;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .sign__shape img.man-2 {
+      top: 60%;
+      right: 0%;
+      z-index: 1;
+    }
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .sign__shape img.man-2 {
+      top: 60%;
+      right: 0%;
+      z-index: 1;
+    }
+  }
+  @media (max-width: 575px) {
+    .sign__shape img.man-2 {
+      display: none;
+    }
+  }
+  .sign__shape img.man-2.man-22 {
+    top: 50%;
+  }
+  @media only screen and (min-width: 1400px) and (max-width: 1600px) {
+    .sign__shape img.man-2.man-22 {
+      top: 55%;
+      right: 20%;
+    }
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .sign__shape img.man-2.man-22 {
+      top: 60%;
+      right: 15%;
+    }
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .sign__shape img.man-2.man-22 {
+      top: 60%;
+      right: 7%;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .sign__shape img.man-2.man-22 {
+      top: 60%;
+      right: 0%;
+      z-index: 1;
+    }
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .sign__shape img.man-2.man-22 {
+      top: 60%;
+      right: 0%;
+      z-index: 1;
+    }
+  }
+  .sign__shape img.circle {
+    right: 32%;
+    top: 38%;
+    animation: signCircle 5s linear 0s infinite alternate;
+    -webkit-animation: signCircle 5s linear 0s infinite alternate;
+  }
+  @media only screen and (min-width: 1400px) and (max-width: 1600px) {
+    .sign__shape img.circle {
+      right: 25%;
+    }
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .sign__shape img.circle {
+      right: 22%;
+    }
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .sign__shape img.circle {
+      right: 11%;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .sign__shape img.circle {
+      right: 4%;
+    }
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .sign__shape img.circle {
+      right: 2%;
+    }
+  }
+  @media (max-width: 575px) {
+    .sign__shape img.circle {
+      display: none;
+    }
+  }
+  .sign__shape img.dot {
+    right: 34%;
+    top: 43%;
+    animation: signDot 5s linear 0s infinite alternate;
+    -webkit-animation: signDot 5s linear 0s infinite alternate;
+  }
+  @media only screen and (min-width: 1400px) and (max-width: 1600px) {
+    .sign__shape img.dot {
+      right: 29%;
+    }
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .sign__shape img.dot {
+      right: 26%;
+    }
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .sign__shape img.dot {
+      right: 18%;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .sign__shape img.dot {
+      right: 5%;
+    }
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .sign__shape img.dot {
+      right: 3%;
+    }
+  }
+  @media (max-width: 575px) {
+    .sign__shape img.dot {
+      display: none;
+    }
+  }
+  .sign__shape img.bg {
+    left: 33%;
+    top: 26%;
+    opacity: 0.06;
+    max-width: 100%;
+    animation: signBg 5s linear 0s infinite alternate;
+    -webkit-animation: signBg 5s linear 0s infinite alternate;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .sign__shape img.bg {
+      left: 10%;
+    }
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .sign__shape img.bg {
+      left: 0%;
+    }
+  }
+  @media (max-width: 575px) {
+    .sign__shape img.bg {
+      display: none;
+    }
+  }
+  .sign__shape img.zigzag {
+    left: 32%;
+    top: 43%;
+    animation: signZigzag 5s linear 0s infinite alternate;
+    -webkit-animation: signZigzag 5s linear 0s infinite alternate;
+  }
+  @media only screen and (min-width: 1400px) and (max-width: 1600px) {
+    .sign__shape img.zigzag {
+      left: 24%;
+    }
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .sign__shape img.zigzag {
+      left: 23%;
+    }
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .sign__shape img.zigzag {
+      left: 11%;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .sign__shape img.zigzag {
+      left: 3%;
+    }
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .sign__shape img.zigzag {
+      left: 2%;
+    }
+  }
+  @media (max-width: 575px) {
+    .sign__shape img.zigzag {
+      display: none;
+    }
+  }
+  .sign__shape img.flower {
+    bottom: 13%;
+    right: 30%;
+  }
+  @media only screen and (min-width: 1400px) and (max-width: 1600px) {
+    .sign__shape img.flower {
+      right: 24%;
+    }
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .sign__shape img.flower {
+      right: 24%;
+    }
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .sign__shape img.flower {
+      right: 12%;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .sign__shape img.flower {
+      right: 3%;
+    }
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .sign__shape img.flower {
+      right: 1%;
+    }
+  }
+  @media (max-width: 575px) {
+    .sign__shape img.flower {
+      right: 1%;
+      bottom: 3%;
+    }
+  }
+  .sign__header {
+    padding: 0 35px;
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .sign__header {
+      padding: 0 10px;
+    }
+  }
+  @media (max-width: 575px) {
+    .sign__header {
+      padding: 0px;
+    }
+  }
+  .sign__header p {
+    margin-bottom: 0;
+    color: #7a797f;
+    position: relative;
+    padding: 0 40px;
+    display: inline-block;
+  }
+  .sign__header p span {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .sign__header p span:last-child {
+    left: auto;
+    right: 0;
+  }
+  .sign__header p a:hover {
+    color: #2b4eff;
+  }
+  .sign__social {
+    display: block;
+    height: 50px;
+    background: #eeedf2;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    position: relative;
+    line-height: 52px;
+    padding-left: 23px;
+    z-index: 1;
+    overflow: hidden;
+    font-size: 16px;
+  }
+  .sign__social::after {
+    position: absolute;
+    content: "";
+    left: -55%;
+    top: 45%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 220px;
+    width: 220px;
+    background: #3360bd;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  @media (max-width: 575px) {
+    .sign__social::after {
+      left: -62%;
+    }
+  }
+  .sign__social i {
+    color: #ffffff;
+    font-size: 16px;
+    margin-right: 50px;
+  }
+  @media (max-width: 575px) {
+    .sign__social i {
+      margin-right: 35px;
+    }
+  }
+  .sign__social:hover {
+    color: #ffffff;
+  }
+  .sign__social:hover::after {
+    width: 100%;
+    height: 150%;
+    left: 0;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+  }
+  .sign__social.g-plus::after {
+    background: #e93e30;
+  }
+  .sign__form h5 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #0e1133;
+    margin-bottom: 11px;
+  }
+  .sign__input {
+    position: relative;
+  }
+  .sign__input input {
+    width: 100%;
+    height: 60px;
+    line-height: 52px;
+    padding: 0 50px;
+    font-size: 14px;
+    border: 2px solid transparent;
+    background: #f6f6f7;
+    color: #0e1133;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+  }
+  .sign__input input::placeholder {
+    color: #8e8c94;
+  }
+  .sign__input input:focus {
+    outline: none;
+    background: #ffffff;
+    border-color: #2b4eff;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(8, 0, 42, 0.2);
+    -moz-box-shadow: 0px 1px 4px 0px rgba(8, 0, 42, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(8, 0, 42, 0.2);
+  }
+  .sign__input i {
+    position: absolute;
+    top: 51%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 25px;
+    font-size: 14px;
+    color: #8e8c94;
+  }
+  .sign__agree input {
+    margin: 0;
+    appearance: none;
+    -moz-appearance: none;
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: transparent;
+    border: 1px solid #7a797f;
+    outline: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+  }
+  .sign__agree input:checked {
+    position: relative;
+    background-color: #2b4eff;
+    border-color: transparent;
+  }
+  .sign__agree input:checked::after {
+    box-sizing: border-box;
+    content: "\f00c";
+    position: absolute;
+    font-family: "Font Awesome 5 Pro";
+    font-size: 10px;
+    color: #ffffff;
+    top: 46%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .sign__agree input:hover {
+    cursor: pointer;
+  }
+  .sign__agree label {
+    padding-left: 10px;
+    font-size: 14px;
+  }
+  .sign__agree label:hover {
+    cursor: pointer;
+  }
+  .sign__agree label a {
+    color: #0e1133;
+    font-weight: 500;
+  }
+  .sign__agree label a:hover {
+    color: #2b4eff;
+  }
+  .sign__forgot a {
+    color: #7a797f;
+  }
+  .sign__forgot a:hover {
+    color: #2b4eff;
+  }
+  .sign__new p {
+    color: #7a797f;
+    margin-bottom: 0;
+  }
+  .sign__new p a {
+    color: #2b4eff;
+  }
+  
+  @keyframes signDot {
+    0% {
+      transform: translateY(0);
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+    }
+    100% {
+      transform: translateY(50px);
+      -webkit-transform: translateY(50px);
+      -moz-transform: translateY(50px);
+      -ms-transform: translateY(50px);
+      -o-transform: translateY(50px);
+    }
+  }
+  @keyframes signZigzag {
+    0% {
+      transform: translateY(0);
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+    }
+    100% {
+      transform: translateY(50px);
+      -webkit-transform: translateY(50px);
+      -moz-transform: translateY(50px);
+      -ms-transform: translateY(50px);
+      -o-transform: translateY(50px);
+    }
+  }
+  @keyframes signCircle {
+    0% {
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }

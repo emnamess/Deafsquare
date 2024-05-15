@@ -1,0 +1,110 @@
+<body>
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+    
+    <!-- Add your site or application content here -->  
+
+   
+
+    <!-- back to top start -->
+    <div class="progress-wrap">
+       <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+       </svg>
+    </div>
+    <!-- back to top end -->
+
+   
+
+    
+
+
+   
+    <main>
+
+       <!-- sign up area start -->
+       <section class="signup__area po-rel-z1 pt-100 pb-145">
+          <div class="sign__shape">
+             <img class="man-1" src="assets/img/icon/sign/man-1.png" alt="">
+             <img class="man-2" src="assets/img/icon/sign/man-2.png" alt="">
+             <img class="circle" src="assets/img/icon/sign/circle.png" alt="">
+             <img class="zigzag" src="assets/img/icon/sign/zigzag.png" alt="">
+             <img class="dot" src="assets/img/icon/sign/dot.png" alt="">
+          </div>
+          <div class="container">
+             <div class="row">
+                <div class="col-xxl-8 offset-xxl-2 col-xl-8 offset-xl-2">
+                   <div class="section__title-wrapper text-center mb-55">
+                      <h2 class="section__title">Sign in to <br>  your account.</h2>
+                      <p>it you don't have an account you can <a routerLink="/signup">Register here!</a></p>
+                   </div>
+                </div>
+             </div>
+             <div class="row">
+                <div class="col-xxl-6 offset-xxl-3 col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+                   <div class="sign__wrapper white-bg">
+                      <div class="sign__header mb-35">
+                         <img src="../../../../assets/img/logo/logo1.png" alt="" height="250" width="250"/>
+                      </div>
+                      <div class="sign__form">
+                         <form [formGroup]="signupForm" >
+                            <div class="sign__input-wrapper mb-25">
+                               <h5>Email</h5>
+                               <div class="sign__input">
+                                  <input type="text" placeholder="e-mail address" formControlName="email" >
+                                  <i class="fal fa-envelope"></i>
+
+                                  <div class="form-error" *ngIf="
+                              signupForm.controls['email'].invalid &&
+                              (signupForm.controls['email'].dirty ||
+                              signupForm.controls['email'].touched)">
+                               <div id="error-message" *ngIf="signupForm.controls['email'].errors?.['required']">
+                                 email required
+                               </div>
+                               <div id="error-message" *ngIf="signupForm.controls['email'].errors?.['email']">
+                                 Invalid email format
+                               </div>
+                               </div>
+                               </div>
+                            </div>
+                            <div class="sign__input-wrapper mb-10">
+                               <h5>Password</h5>
+                               <div class="sign__input">
+                                  <input type="text" placeholder="Password" formControlName="password">
+                                  <i class="fal fa-lock"></i>
+
+                                  <div
+                                 class="form-error"
+                                 *ngIf="signupForm.controls['password'].invalid &&(signupForm.controls['password'].dirty || signupForm.controls['password'].touched)">
+                                 <div id="error-message" *ngIf="signupForm.controls['password'].errors?.['required']">
+                                 Password is required
+                                  </div>
+                               </div>
+                               </div>
+                            </div>
+                            <div class="sign__action d-sm-flex justify-content-between mb-30">
+                               <div class="sign__agree d-flex align-items-center">
+                                  
+                               </div>
+                               <div class="sign__forgot">
+                                  <a href="#">Forgot your password?</a>
+                               </div>
+                            </div>
+                            <button class="e-btn  w-100"> <span></span> Sign In</button>
+                            <div class="sign__new text-center mt-20">
+                               <p>New to DeafSquare ? <a routerLink="/signup">Sign Up</a></p>
+                            </div>
+                         </form>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </section>
+       <!-- sign up area end -->
+       
+    </main>
+
+       
+ </body>
