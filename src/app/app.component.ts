@@ -18,8 +18,8 @@ export class AppComponent {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         // Update displayHero based on the current route
-        this.displayHero = !['/', '/signup', '/signin'].includes(event.url);
-        this.displayLayout = !['/signup', '/signin'].includes(event.url);
+        this.displayHero = !['/', '/signup', '/signin','/dashboard'].includes(event.url);
+        this.displayLayout = !['/signup', '/signin','/dashboard'].includes(event.url);
 
       }
     });

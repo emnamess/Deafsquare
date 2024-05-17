@@ -23,6 +23,9 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { HttpClientModule } from '@angular/common/http';
+import { DashboardComponent } from './client/components/dashboard/dashboard.component';
+import { UserprofileComponent } from './client/components/userprofile/userprofile.component';
+import { SidebarComponent } from './client/components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +42,10 @@ import { HttpClientModule } from '@angular/common/http';
     HeroComponent,
     PreloaderComponent,
     OurMissionComponent,
-    OurTeamComponent
+    OurTeamComponent,
+    DashboardComponent,
+    UserprofileComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
